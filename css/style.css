@@ -85,7 +85,8 @@
 
 .weather-details {
     height: fit-content;
-    margin: 0 22px;
+    margin: auto;
+    width: 90%;
     display: flex;
     justify-content: center !important;
     background: #ffffff24;
@@ -122,7 +123,8 @@
 
 .extra-details {
     height: 100%;
-    margin: 10px 22px;
+    margin: 10px auto;
+    width: 90%;
     background: #ffffff24;
     border: 1px solid #3E2D8F;
     color: #fff;
