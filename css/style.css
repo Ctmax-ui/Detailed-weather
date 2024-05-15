@@ -1,34 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&family=Signika:wght@300..700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Signika", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.wraper{
+.wraper {
     width: 100vw;
     height: 100vh;
 
 }
-.main-card{
+
+.main-card {
     height: 100%;
-    width: 400px;
+    width: 100%;
     margin: auto;
     background: linear-gradient(to top, #3E2D8F, #9D52AC);
+    border-radius: 0 !important;
 }
 
-.search-bar input{
+.search-bar input {
     width: 90%;
     padding: 10px 30px;
     font-size: 1.1rem;
     outline: none !important;
 }
-.search-bar button{
+
+.search-bar button {
     position: absolute;
-    right: 35px;
+    right: 7%;
     top: 50%;
     transform: translateY(-50%);
     width: 30px;
@@ -37,7 +41,8 @@
     font-size: 1.3rem;
     color: #DDB130;
 }
-.search-bar button:hover{
+
+.search-bar button:hover {
     color: #c59914;
 }
 
@@ -46,24 +51,39 @@
     color: #fff;
     font-size: 0.9rem;
 }
-.shake{
-    animation: shake 0.8s ease-in-out ;
+
+.shake {
+    animation: shake 0.8s ease-in-out;
 }
 
 @keyframes shake {
-    0%, 100% {
-        transform: translateX(0); /* Start and end position: no horizontal movement */
+
+    0%,
+    100% {
+        transform: translateX(0);
+        /* Start and end position: no horizontal movement */
     }
-    10%, 30%, 50%, 70%, 90% {
-        transform: translateX(-10px); /* Move 10px to the left */
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+        /* Move 10px to the left */
     }
-    20%, 40%, 60%, 80% {
-        transform: translateX(10px); /* Move 10px to the right */
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+        /* Move 10px to the right */
     }
 }
 
 
-.weather-details{
+.weather-details {
     height: fit-content;
     margin: 0 22px;
     display: flex;
@@ -71,35 +91,66 @@
     background: #ffffff24;
     border: 1px solid #3E2D8F;
 }
-.weather-details img{
+
+.weather-details img {
     width: 144px;
     height: 144px;
     margin: auto;
     border: none;
 }
 
-.weather-details p{
+.weather-details p {
     margin: 0;
     color: #fff;
 }
-#description{
+
+#description {
     right: 20px;
     top: 20px;
     font-weight: bold;
 }
-#temp{
+
+#temp {
     font-size: 4rem;
     font-weight: 600;
 }
-#location{
+
+#location {
     font-size: 1.3rem;
 }
 
 
-.extra-details{
+.extra-details {
     height: 100%;
-    margin: 10px 22px;  
+    margin: 10px 22px;
     background: #ffffff24;
     border: 1px solid #3E2D8F;
     color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .main-card {
+        width: 100%;
+        border-radius: 0 !important;
+    }
+    .search-bar button{
+        right: 10%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 368px) {
+
+    .main-card {
+        font-size: .8rem !important;
+    }
+
+    #temp {
+        font-size: 2rem;
+    }
 }
