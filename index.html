@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,64 +8,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-
-
     <div class="wraper d-flex justify-content-center align-items-center ">
-
         <div class="card main-card ">
             <form id="search-form" class="pb-1">
             <div class="search-bar d-flex justify-content-center align-items-center position-relative my-2">
                 <input type="text" class="rounded-pill border-0" id="search-box" placeholder="Search Here...">
                 <button type="submit" id="submit-btn"><i class="fa-solid fa-search"></i></button>
             </div>
-            
             <div class="text-center m-0" id="eror"></div>
         </form>
-
             <div class="card weather-details p-2 rounded-4 position-relative ">
                 <img id="weather-img" src="./assets/weathers/haze.png" alt="Not found">
                 <p class="position-absolute" id="description">Status</p>
                 <p id="temp" class="m-auto mt-2 ">0</p>
-
                 <p id="location" class="m-auto fw-bold">Unknown</p>
-
                 <div class="d-flex justify-content-center mt-2 gap-4">
-
                     <p class="">Min: <span id="min-temp">0</span></p>
                     <p class="">Max: <span id="max-temp">0</span></p>
-
                 </div>
             </div>
-
             <div class="extra-details rounded-4 p-2 pt-3">
                 <div class="w-100 d-flex justify-content-evenly ">
-
                     <p><i class="fa-solid fa-wind"></i> <span id="wind-speed">0</span> Km/s</p>
-                    <!-- <p><i class="fa-solid fa-gauge"></i> <span>2.06</span> m/s</p> -->
                     <p><i class="fa-regular fa-compass"></i> <span id="wind-angle">0</span>°</p>
                 </div>
-
                 <div class="w-100 d-flex justify-content-evenly ">
                     <p>Pressure: <span id="pressure">0</span></p>
                     <p>Humidity: <span id="humidity">0</span></p>
                 </div>
-
                 <div class="w-100 d-flex justify-content-evenly ">
                     <p>Longitude: <span id="longitude">0</span></p>
                     <p>Latitude: <span id="latitude">0</span></p>
                 </div>
-
-
             </div>
-
         </div>
-
     </div>
-
-
-
 
     <script src="./js/index.js"></script>
 </body>
