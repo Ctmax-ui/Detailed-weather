@@ -7,8 +7,8 @@
     font-family: "Signika", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 }
-
 .wraper {
     width: 100vw;
     height: 100vh;
@@ -19,8 +19,32 @@
     height: 100%;
     width: 100%;
     margin: auto;
-    background: linear-gradient(to top, #3E2D8F, #9D52AC);
     border-radius: 0 !important;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.main-card::before {
+    content: '';
+    position: absolute;
+    scale: 2.5;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, #3E2D8F, #9D52AC);
+    animation: bgRoundAnim 4s linear infinite;
+}
+
+@keyframes bgRoundAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .search-bar input {
@@ -89,8 +113,15 @@
     width: 90%;
     display: flex;
     justify-content: center !important;
-    background: #ffffff24;
-    border: 1px solid #3E2D8F;
+    background: transparent;
+    background-image: linear-gradient(
+        110deg,
+        rgba(115, 87, 255, 0.3),
+        rgba(62, 45, 143, 0.3)
+    );
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid #efefef83;
 }
 
 .weather-details img {
@@ -125,9 +156,17 @@
     height: 100%;
     margin: 10px auto;
     width: 90%;
-    background: #ffffff24;
-    border: 1px solid #3E2D8F;
     color: #fff;
+    background: transparent;
+    background-image: linear-gradient(
+        110deg,
+        rgba(115, 87, 255, 0.3),
+        rgba(62, 45, 143, 0.3)
+    );
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid #efefef83;
+    padding-top: 3% !important;
 }
 
 

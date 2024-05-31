@@ -86,3 +86,4 @@ searchForm.addEventListener("submit", (e) => {
         searchInput.value = "";
     }
 });
+
